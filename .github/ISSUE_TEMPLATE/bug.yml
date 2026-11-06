@@ -1,0 +1,33 @@
+name: Что-то не работает
+description: Инструмент ведёт себя не так, как написано в README
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Версия
+      description: Тег из каталога или из Releases
+      placeholder: v1.2.0
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Где запускали
+      placeholder: "Windows 11, Figma Desktop 125, Claude Code 2.1"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Что делали
+      description: Шаги по порядку, чтобы владелец мог повторить
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Что получилось и что ожидали
+      description: Скриншот или текст ошибки целиком
+    validations:
+      required: true

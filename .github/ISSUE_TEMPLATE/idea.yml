@@ -1,0 +1,26 @@
+name: Идея или доработка
+description: Чего не хватает в этом инструменте
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какая задача сейчас решается неудобно
+      description: Конкретный случай из работы, а не общее пожелание
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Как могло бы быть
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Как часто встречается
+      options:
+        - Каждый день
+        - Каждую неделю
+        - Раз в месяц
+        - Реже
+    validations:
+      required: true
